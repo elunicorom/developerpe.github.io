@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Developer.pe - Generales</title>
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'general/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static 'general/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'general/css/clean-blog.css' %}" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="{% static 'imagenes/favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'imagenes/favicon.ico' %}" type="image/x-icon">
+  </head>
+
+  <body id="page-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="{% url 'index' %}">DEVELOPER.PE</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">MENU
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger  " href="#inicio">Inicio</a>
+            </li>           
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('../../../static/general/img/general/home-bg.jpg')" id="inicio">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>Post Generales</h1>
+              <span class="subheading">Una variedad pensada en ti</span>
+              <div>
+                <br><br><br><br>
+                <a class="btn btn-primary btn-xl js-scroll-trigger"  href="#post">Empieza Ahora!</a>    
+              </div>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container" id="post">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+
+                  <div class="post-preview">
+                    <a href="{% url 'post:detail_post_general' post.id %}">
+                      <h2 class="post-title">
+                        {{ post.titulo }}
+                      </h2>
+                    </a>
+                      <h3 class="post-subtitle">
+                        {{ post.subtitulo }}
+                      </h3>                    
+                    <p class="post-meta">Creado por
+                      {{ post.firma }}, {{ post.fecha }}
+                      </p>
+                  </div>
+                  <hr>   
+      
+          <!-- Pager -->
+          <div class="clearfix">
+            <a class="btn btn-primary float-right" href="#">Pagina siguiente &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+<!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <ul class="list-inline text-center">
+              <li class="list-inline-item">
+                <a href="https://twitter.com/OpenYourMindSan?lang=es" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/openmindsan/" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/openmindsan" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href=" https://www.youtube.com/channel/UCOzf2U3BTng85gsFJHvIInQ?view_as=public" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>   
+               </span>
+                </a>
+              </li>             
+            </ul>
+            <p class="copyright text-muted">Copyright &copy; Developer.pe 2017</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="general/vendor/jquery/jquery.min.js"></script>
+    <script src="general/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="general/js/clean-blog.min.js"></script>
+       <script src="base/vendor/jquery-easing/jquery.easing.min.js"></script>  
+    <script src="base/js/creative.min.js"></script>
+  </body>
+
+</html>
